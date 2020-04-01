@@ -1,0 +1,36 @@
+// Jessika Catharina Jardim Rodigues e  Daiane Escobar Dias
+ 
+<? php
+classe Animal {
+  public $nome;
+  public $idade;
+  public $som;
+  public $acao;
+}
+ 
+Classe Cachorro estende Animal {
+  função pública Cachorro ($ nom, $ id, $s) {
+    $ this-> nome = $nom;
+    $ this-> idade = $id;
+    $ this-> som = $s;
+    $ this-> acao = "Correr";
+  }
+}
+Classe Cavalo estende Animal {
+   função pública Cavalo ($ nom, $ id, $ s) {
+    $ this-> nome = $ nom;
+    $ this-> idade = $ id;
+    $ this-> som = $ s;
+    $ this-> acao = "Correr";
+  }
+}
+ 
+Classe Preguica estende Animal {
+  função pública Preguica ($ nom, $ id, $ s) {
+    $ this-> nome = $ nom;
+    $ this-> idade = $ id;
+    $ this-> som = $ s;
+    $ this-> acao = "Subir em árvores";
+  }
+}
+?>
