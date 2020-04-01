@@ -1,0 +1,48 @@
+// Jessika Catharina Jardim Rodrigues  e  Daiane Escobar Dias 
+ 
+<? php
+classe Animal {
+  public $ nome;
+  public $ idade;
+  public $ som;
+  public $ acao;
+ 
+  função pública setSom () {
+    echo "{$ this-> nome} {$ this-> som} \ n"}
+}
+ 
+Classe Cachorro estende Animal {
+  função pública Cachorro ($ nom, $ id, $ s) {
+    $ this-> nome = $ nom;
+    $ this-> idade = $ id;
+    $ this-> som = $ s;
+    $ this-> acao = "Correr";
+}
+}
+ 
+Classe Cavalo estende Animal {
+   função pública Cavalo ($ nom, $ id, $ s) {
+    $ this-> nome = $ nom;
+    $ this-> idade = $ id;
+    $ this-> som = $ s;
+    $ this-> acao = "Correr";
+}
+}
+ 
+Classe Preguica estende Animal {
+  função pública Preguica ($ nom, $ id, $ s) {
+    $ this-> nome = $ nom;
+    $ this-> idade = $ id;
+    $ this-> som = $ s;
+    $ this-> acao = "Subir em árvores";
+}
+}
+ 
+$ a1 = new Cachorro ("Belinha", "1 ano", "Latido");
+$ a1-> setSom ();
+$ a2 = new Cavalo ("Princesa", "12 anos", "Relincho");
+$ a2-> setSom ();
+$ a3 = nova Preguica ("Nick", "2 anos", "balir");
+$ a3-> setSom ();
+ 
+?>
