@@ -1,0 +1,59 @@
+//  Jessika Catharina Jardim Rodrigues e  Daiane Escobar Dias
+ 
+<? php
+classe Imovel {
+  public $ endereco; 
+  public $preco;
+}
+ 
+classe Novo amplia Imovel {
+  public $ adic;
+  função pública Novo ($e, $p) {
+    $ this-> endereco = $ e;
+    $ this-> preco = $ p;
+  }
+ 
+  função pública setAdic () {
+   $ this-> preco = $ this-> preco + (($ this-> preco * 30) / 100); 
+}
+função pública getAdic () {
+  echo "O imóvel novo tem um adicional de 30% no valor \ n";
+}
+} 
+ 
+classe Velho amplia Imovel {
+  public $ desc;
+  função pública Velho ($ e, $ p) {
+    $ this-> endereco = $ e;
+    $ this-> preco = $ p;
+  }
+ 
+função pública setdesc () {
+   $ this-> preco = $ this-> preco - (($ this-> preco * 20) / 100); 
+}
+ 
+função pública getdesc () {
+  echo "O imóvel antigo tem um desconto de 20%  do valor\ n";
+}
+}
+ 
+$ imv1 = new Novo ("Rua Castelo Branco, nº 725", R$350.000);
+$ imv1-> getAdic (); 
+echo "Primeiro Imóvel: (Novo) \ n"
+ec o "Endereço: {$ imv1-> endereco} \ n";
+ec o "Preço: R $ {$ imv1-> preco} \ n";
+$ imv1-> setAdic ();
+ 
+echo "Preço com o adicional incluso: {$ imv1-> preco} \ n \ n";
+ 
+$ imv2 = new Velho ("Rua Rodrigues Lima, nº 1234", R$600.000);
+$ imv2-> getDesc (); 
+ 
+echo "Segundo Imóvel: (Velho) \ n";
+echo "Endereço: {$ imv2-> endereco} \ n";
+echo "Preço: R$ {$ imv2-> preco} \ n";
+ 
+$ imv2-> setDesc ();
+echo "O preço com o desconto incluso é: {$ imv2-> preco}";
+ 
+?>
