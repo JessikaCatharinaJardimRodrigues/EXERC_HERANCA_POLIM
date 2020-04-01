@@ -1,0 +1,66 @@
+// Jessika Catharina Jardim Rodrigues e  Daiane Escobar Dias
+ 
+<? php
+classe Veterinario {
+  public $ ver;
+  exame de função pública ($ a) {
+    eco "Examinando! $ a \ n";
+    $ this-> ver = true;
+  } 
+}
+ 
+classe Animal {
+  public $ nome;
+  public $ idade;
+  public $ som;
+  public $ ação;
+ 
+  função pública setSom () {
+    echo "{$ this-> nome} {$ this-> som} \ n";
+  }
+}
+Classe Cachorro estende Animal {
+  função pública Cachorro ($ nom, $ id, $ s) {
+    $ this-> nome = $ nom;
+    $ this-> idade = $ id;
+    $ this-> som = $ s;
+    $ this-> acao = "Correr";
+}
+}
+ 
+Classe Cavalo estende Animal {
+   função pública Cavalo ($ nom, $ id, $ s) {
+    $ this-> nome = $ nom;
+    $ this-> idade = $ id;
+    $ this-> som = $ s;
+    $ this-> acao = "Correr";
+}
+}
+ 
+Classe Preguica estende Animal {
+  função pública Preguica ($ nom, $ id, $ s) {
+    $ this-> nome = $ nom;
+    $ this-> idade = $ id;
+    $ this-> som = $ s;
+    $ this-> acao = "Subir em árvores";
+}
+}
+ 
+$ exem = new veterinário;
+$ a1 = novo Cachorro ("Belinha", "2 anos", "latido");
+$ exem-> examina ($ a1-> nome);
+ if ($ exem-> ver == true) {
+   $ a1-> setSom ();
+ }
+ 
+$ a2 = new Cavalo ("Princesa", "12 anos", "relincho");
+$ exem-> examina ($ a2-> nome);
+ if ($ exem-> ver == true) {
+$ a2-> setSom ();}
+$ a3 = new Preguica ("Nick", "2 anos", "balir");
+$ exem-> examina ($ a3-> nome);
+ if ($ exem-> ver == true) {
+   $ a3-> setSom ();
+}
+ 
+?>
